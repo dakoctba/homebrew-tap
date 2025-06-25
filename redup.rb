@@ -5,20 +5,20 @@
 class Redup < Formula
   desc "Duplicate File Manager - A CLI tool to find and manage duplicate files by content"
   homepage "https://github.com/dakoctba/redup"
-  version "1.0.6"
+  version "1.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dakoctba/redup/releases/download/v1.0.6/redup_Darwin_x86_64.zip"
-      sha256 "175abb182b214afc37f9ee6ad2caf911fd089053eadd46b467810d33998275a3"
+      url "https://github.com/dakoctba/redup/releases/download/v1.0.7/redup_Darwin_x86_64.zip"
+      sha256 "299e66dbfb78a93e4ca10e1c029e562699829bef4461c0586585ec6511345ec2"
 
       def install
         bin.install "redup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dakoctba/redup/releases/download/v1.0.6/redup_Darwin_arm64.zip"
-      sha256 "426265f6e24062e294a11be4ca967c1d6361236a4c3e5442dc40030a9d671f16"
+      url "https://github.com/dakoctba/redup/releases/download/v1.0.7/redup_Darwin_arm64.zip"
+      sha256 "17a936a7f20e1e78a146280d8ee89bbd1a55ed9d59707f60c587f2fa77bc3919"
 
       def install
         bin.install "redup"
@@ -29,8 +29,8 @@ class Redup < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dakoctba/redup/releases/download/v1.0.6/redup_Linux_x86_64.tar.gz"
-        sha256 "78bf2072902877d86337eaa61c567edda4adf0c6d5ef52bae29bc136ecbcde9e"
+        url "https://github.com/dakoctba/redup/releases/download/v1.0.7/redup_Linux_x86_64.tar.gz"
+        sha256 "eaef4c99264ee5450581be2e32267cd3e886ef503ac13364aed6c0461b7c79e6"
 
         def install
           bin.install "redup"
@@ -39,8 +39,8 @@ class Redup < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dakoctba/redup/releases/download/v1.0.6/redup_Linux_arm64.tar.gz"
-        sha256 "e2967af39b11c5725f5e8f4867ed1c6b8f17f6b4d80be9be49c024ab07534ada"
+        url "https://github.com/dakoctba/redup/releases/download/v1.0.7/redup_Linux_arm64.tar.gz"
+        sha256 "4d9881bebd69c1871871617744995708742e61b7d6478e31ccdfd707f004cbcd"
 
         def install
           bin.install "redup"
