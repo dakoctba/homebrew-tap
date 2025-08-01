@@ -5,20 +5,20 @@
 class Cmt < Formula
   desc "A Go-based tool for generating conventional commit messages using AI models via Ollama"
   homepage "https://github.com/dakoctba/cmt"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dakoctba/cmt/releases/download/v1.0.3/cmt_Darwin_x86_64.zip"
-      sha256 "a55813902bd8ce384e71aaf8a32895ae08715172375cea1e59828dca71566efe"
+      url "https://github.com/dakoctba/cmt/releases/download/v1.0.4/cmt_Darwin_x86_64.zip"
+      sha256 "e3f8e39ad7e310b3683546e32d8a59358848cedc3b3eab081d619ec2939d4611"
 
       def install
         bin.install "cmt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dakoctba/cmt/releases/download/v1.0.3/cmt_Darwin_arm64.zip"
-      sha256 "d9a0b431b7aab8dd030a2ecb01203b98c35d631ff226986db834bd67df0701a5"
+      url "https://github.com/dakoctba/cmt/releases/download/v1.0.4/cmt_Darwin_arm64.zip"
+      sha256 "d5feef7eb37bf6fbcb878b58194dec526bd55362ab63f20682b0d1e14fd2c7d5"
 
       def install
         bin.install "cmt"
@@ -29,8 +29,8 @@ class Cmt < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dakoctba/cmt/releases/download/v1.0.3/cmt_Linux_x86_64.tar.gz"
-        sha256 "7fa2a3e2e0c9b341664de49134e588e4e17697afe2e1155b05d3ce207e5d1d40"
+        url "https://github.com/dakoctba/cmt/releases/download/v1.0.4/cmt_Linux_x86_64.tar.gz"
+        sha256 "7da6935469a8f9242cba8f1f37a072c90d2f0388181ee9afd85d1da3b8268075"
 
         def install
           bin.install "cmt"
@@ -39,8 +39,8 @@ class Cmt < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dakoctba/cmt/releases/download/v1.0.3/cmt_Linux_arm64.tar.gz"
-        sha256 "52dde25b86fe701d17f89693cc8787fb57adb2ea07d382a46bdf22ddedb57455"
+        url "https://github.com/dakoctba/cmt/releases/download/v1.0.4/cmt_Linux_arm64.tar.gz"
+        sha256 "9e52a38735f086801a460d59c36839fa5f613aa8e5a385155d37ac19e04925f1"
 
         def install
           bin.install "cmt"
